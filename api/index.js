@@ -33,6 +33,7 @@ App.use(Express.static("./public"))
 require("./database/connect.js")
 // set default admin
 defaultAdmin()
+
 App.use((req, res, next) => {
       res.header('Access-Control-Allow-Origin', '*');
       next();
