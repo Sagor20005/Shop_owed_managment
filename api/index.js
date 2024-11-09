@@ -16,7 +16,14 @@ const App = Express()
 dotenv.config()
 
 // parser
-App.use(cors())
+App.use(cors(
+  {
+  origin: "*",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204
+}
+  ))
 App.use(Express.json())
 
 // static folder
