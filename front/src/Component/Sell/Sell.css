@@ -1,0 +1,11 @@
+.sell_containar{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.sell_containar h2{
+  margin-top: 40vh;
+}

@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    height: 100vh;
+  }
+  .selectedOwed{
+    height: 100%;
+    width: 100%;
+    background: #0d181a;
+  }
+  .selectedOwed .owedTaka{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  .selectedOwed_topbar{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    color: white;
+  }
+  .selectedOwed_topbar img{
+    height: 40px;
+    width: 40px;
+  }
+  hr{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .owed_details{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    color: white;
+    position: relative;
+  }
+  .owed_details div{
+    width: 50%;
+  }
+  .add_owed{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  .owed_details .action_btns{
+    position: absolute;
+    display: none;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+    top: 0;
+    left: 0;
+  }
+  .owed_details:hover .action_btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+  .owed_details .action_btns img{
+    height: 30px;
+    width: 30px;
+  }
+  .owed_date_money p{
+    font-size: 14px;
+  }
