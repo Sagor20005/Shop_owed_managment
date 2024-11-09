@@ -40,7 +40,7 @@ const Login = ()=>{
       console.log(err)
       Swal.fire({
         title:"Error!",
-        text:"No network",
+        text:err.massage,
         icon:"error"
       })
     }
