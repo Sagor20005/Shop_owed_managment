@@ -9,7 +9,6 @@ import SubmitEventToObject from "../Utilities/SubmitEventToObject"
 const Login = ()=>{
   const Navigate = useNavigate()
   const [cookies,setCookie] = useCookies([process.env.REACT_APP_COOKIE])
-  console.log(cookies)
   
     // Submit handler
   const Submit = async (e)=>{
@@ -38,6 +37,7 @@ const Login = ()=>{
         })
       }
     }catch(err){
+      console.log(err)
       Swal.fire({
         title:"Error!",
         text:"No network",
