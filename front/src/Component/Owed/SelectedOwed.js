@@ -199,7 +199,7 @@ return(
               </div>
 
               <div className="owed_date_money">
-                <h4>{owed.amount}</h4>
+                <h4>{owed.amount}৳</h4>
                 <p>
                 {new Date(owed.owed_date).toString().slice(0, 25)}
                 </p>
