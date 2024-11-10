@@ -27,7 +27,7 @@ const Login = ()=>{
       })
       result = await result.json()
       if(result && result.state){
-        setCookie(process.env.REACT_APP_COOKIE,result.token)
+        setCookie(process.env.REACT_APP_COOKIE,result.token,{maxAge:31557600000})
         Navigate("/")
       }else{
         Swal.fire({
