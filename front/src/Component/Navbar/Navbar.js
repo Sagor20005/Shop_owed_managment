@@ -32,10 +32,7 @@ const Navbar = ()=> {
         <input id="search" type="search" placeholder="Search" />
 
 
-      <div className="logu">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT51nj0y-e3B1byuXfXQJWfLAAT_tiCiWIDDw&usqp=CAU" alt="logu" />
-    </div>
-  </div>
+      </div>
 </div>
 }
 </>
